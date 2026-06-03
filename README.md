@@ -59,6 +59,53 @@ alarm-clock --help
 alarm-clock --version
 ```
 
+## Share And Install From PyPI
+
+If this package is published on PyPI, share these instructions with users:
+
+```text
+Install Python 3.10 or newer:
+https://www.python.org/downloads/
+
+Then open Terminal or PowerShell and run:
+
+pip install alarm-clock-cli
+alarm-clock
+```
+
+If `pip` is not recognized or the install does not start, try:
+
+```bash
+python -m pip install alarm-clock-cli
+```
+
+On Windows, this may also work:
+
+```bash
+py -m pip install alarm-clock-cli
+```
+
+If pip is old, upgrade pip first:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install alarm-clock-cli
+```
+
+If the package installs but `alarm-clock` is not recognized, close and reopen
+the terminal. If it still fails, run:
+
+```bash
+python -m pip show alarm-clock-cli
+```
+
+That confirms whether the package is installed in the current Python
+environment.
+
+Reviewer note: this project is a Python CLI package. The install command adds a
+console command named `alarm-clock`, which starts the interactive alarm clock.
+No browser, server, database, or background service is required.
+
 ## Menu
 
 ```text
